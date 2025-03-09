@@ -1,0 +1,65 @@
+:root{
+    --cor-primaria: black; /* Define a cor primária como preto */
+    --cor-secundaria: rgb(138, 133, 133); /* Define a cor secundária como um tom de cinza */
+    --cor-terceraria: white; /* Define a cor terciária como branco */
+    --cor-quarteta: orange; /* Define a cor quarteta como laranja */
+}
+
+body{
+    background-color: var(--cor-primaria); /* Define o fundo da página como a cor primária (preto) */
+}
+
+.container{
+    width: 50%; /* Define a largura do container como 50% da largura da tela */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    font-family: arial; /* Define a fonte do texto dentro do container como Arial */
+}
+
+td{
+    text-align: center; /* Alinha o conteúdo das células de dados ao centro */
+    padding: 5px; /* Adiciona 5px de espaço interno nas células de dados */
+    font-family: arial; /* Define a fonte do texto dentro das células de dados como Arial */
+}
+
+th{
+    width: 100%; /* Define a largura do cabeçalho como 100% da largura disponível */
+    text-align: right; /* Alinha o conteúdo do cabeçalho à direita */
+    color: var(--cor-terceraria); /* Define a cor do texto do cabeçalho como branco */
+    font-size: 70px; /* Define o tamanho da fonte do texto do cabeçalho como 70px */
+    font-family: arial; /* Define a fonte do texto do cabeçalho como Arial */
+    border: 10px solid white; /* Adiciona uma borda sólida de 10px de largura e de cor branca ao redor do cabeçalho */
+    border-radius: 10px; /* Arredonda as bordas do cabeçalho com raio de 10px */
+    text-align: center; /* Alinha o conteúdo do cabeçalho ao centro (este `text-align: center` sobrescreve o `right` acima) */
+}
+
+#resultado {
+    width: 90%;  /* Define a largura do elemento com id 'resultado' como 90% da largura disponível */
+    height: 90px;  /* Define a altura do elemento com id 'resultado' como 90px */
+    font-size: 50px;  /* Define o tamanho da fonte do texto dentro do elemento como 50px */
+    font-style: var(--cor-primaria); /* Define o estilo da fonte (não é válido, pois 'font-style' define o estilo da fonte, não a cor) */
+    font-family: arial; /* Define a fonte do texto dentro do elemento como Arial */
+    text-align: end; /* Alinha o texto dentro do elemento ao final (direita) */
+    padding: 20px;  /* Adiciona 20px de espaço interno ao redor do texto dentro do elemento */
+}
+
+button{
+    width: 100px; /* Define a largura dos botões como 100px */
+    padding: 15px; /* Adiciona 15px de espaço interno ao redor do conteúdo dentro do botão */
+    border-radius: 20px; /* Arredonda as bordas do botão com raio de 20px */
+    background-color: var(--cor-secundaria); /* Define a cor de fundo do botão como a cor secundária (cinza) */
+    color: var(--cor-terceraria); /* Define a cor do texto dentro do botão como branco */
+    font-family: arial; /* Define a fonte do texto dentro do botão como Arial */
+    font-size: xx-large; /* Define o tamanho da fonte dentro do botão como xx-large */
+    border-color: var(--cor-terceraria); /* Define a cor da borda do botão como branco */
+    cursor: pointer; /* Altera o cursor para "pointer" quando passa sobre o botão, indicando que é clicável */
+}
+
+table {
+    border: solid 10px white; /* Define uma borda sólida de 10px de largura e de cor branca ao redor da tabela */
+    border-radius: 10px; /* Arredonda as bordas da tabela com raio de 10px */
+    font-family: arial; /* Define a fonte do texto dentro da tabela como Arial */
+}
+
+#buttonfunction{
+    background-color: var(--cor-quarteta); /* Define a cor de fundo do botão com id 'buttonfunction' como laranja */
+}

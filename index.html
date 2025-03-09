@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link para o arquivo CSS, onde estão os estilos da página -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Tabela que contém os botões e o campo de resultado -->
+    <table class="container">
+        <thead>
+            <th> 
+                <!-- Campo de entrada onde o resultado será mostrado -->
+                <input type="text" id="resultado" disabled> <!-- O "disabled" impede que o usuário edite diretamente -->
+            </th>
+        </thead>
+
+        <tbody>
+            <!-- Primeira linha de botões -->
+            <tr>
+                <td>
+                    <!-- Botão de limpar (C) chama a função clearResult('') -->
+                    <button id="buttonfunction" onclick="clearResult('')">C</button>
+                    
+                    <!-- Botão de parênteses chama a função appendToResult('') -->
+                    <button id="buttonfunction" onclick="appendToResult('')">()</button>
+                    
+                    <!-- Botão de porcentagem chama a função appendToResult('%') -->
+                    <button id="buttonfunction" onclick="appendToResult('%')">%</button>
+                    
+                    <!-- Botão de divisão chama a função appendToResult('/') -->
+                    <button id="buttonfunction" onclick="appendToResult('/')">÷</button>
+                </td>
+            </tr>
+
+            <!-- Segunda linha de botões -->
+            <tr>
+                <td>
+                    <!-- Botões de números de 7 a 9 e o botão de multiplicação -->
+                    <button onclick="appendToResult('7')">7</button>
+                    <button onclick="appendToResult('8')">8</button>
+                    <button onclick="appendToResult('9')">9</button>
+                    <button id="buttonfunction" onclick="appendToResult('*')">X</button>
+                </td>
+            </tr>
+
+            <!-- Terceira linha de botões -->
+            <tr>
+                <td>
+                    <!-- Botões de números de 4 a 6 e o botão de subtração -->
+                    <button onclick="appendToResult('4')">4</button>
+                    <button onclick="appendToResult('5')">5</button>
+                    <button onclick="appendToResult('6')">6</button>
+                    <button id="buttonfunction" onclick="appendToResult('-')">-</button>
+                </td>
+            </tr>
+
+            <!-- Quarta linha de botões -->
+            <tr>
+                <td>
+                    <!-- Botões de números de 1 a 3 e o botão de adição -->
+                    <button onclick="appendToResult('1')">1</button>
+                    <button onclick="appendToResult('2')">2</button>
+                    <button onclick="appendToResult('3')">3</button>
+                    <button id="buttonfunction" onclick="appendToResult('+')">+</button>
+                </td>
+            </tr>
+
+            <!-- Quinta linha de botões -->
+            <tr>
+                <td>
+                    <!-- Botão de alternar o sinal (+/-), sem função definida no código fornecido -->
+                    <button >+/-</button>
+                    
+                    <!-- Botão de número 0 -->
+                    <button onclick="appendToResult('0')">0</button>
+                    
+                    <!-- Botão de vírgula -->
+                    <button onclick="appendToResult(',')">,</button>
+                    
+                    <!-- Botão igual (=) que chama a função calculateResult() -->
+                    <colspan="4"><button class="igual" id="buttonfunction" onclick="calculateResult()">=</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <!-- Link para o arquivo JavaScript que contém as funções da calculadora -->
+    <script src="/JavaScript/script.js"></script>
+</body>
+
+</html>
