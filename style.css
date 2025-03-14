@@ -36,7 +36,7 @@ th{
     width: 90%;  /* Define a largura do elemento com id 'resultado' como 90% da largura disponível */
     height: 90px;  /* Define a altura do elemento com id 'resultado' como 90px */
     font-size: 50px;  /* Define o tamanho da fonte do texto dentro do elemento como 50px */
-    font-style: var(--cor-primaria); /* Define o estilo da fonte (não é válido, pois 'font-style' define o estilo da fonte, não a cor) */
+    color: var(--cor-terceraria); /*cor do texto*/
     font-family: arial; /* Define a fonte do texto dentro do elemento como Arial */
     text-align: end; /* Alinha o texto dentro do elemento ao final (direita) */
     padding: 20px;  /* Adiciona 20px de espaço interno ao redor do texto dentro do elemento */
